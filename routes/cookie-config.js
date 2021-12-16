@@ -1,7 +1,9 @@
 const express = require('express');
 const cookieConfigRouter = express.Router();
 
-cookieConfigRouter;
+cookieConfigRouter.get('/', (req, res) => {
+    res.render('cookie-config/index');
+});
 
 module.exports = {
     cookieConfigRouter,

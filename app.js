@@ -11,9 +11,6 @@ app.use(cookieParser());
 
 app.engine('.hbs', hbs.engine({ extname: '.hbs' }));
 app.set('view engine', '.hbs');
-app.get('/', (req, res) => {
-    res.send('ok');
-});
 app.use('/', homeRouter);
 app.use('/cookie-config', cookieConfigRouter);
 app.use('/order', orderRouter);
