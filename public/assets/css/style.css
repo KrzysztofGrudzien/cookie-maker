@@ -4,6 +4,7 @@
     --color-brown-dark: #5a2c22;
     --color-bg: #f4fcfc;
     --color-text: #455a5b;
+    --color-text-light: #99cdcf;
 }
 
 html {
@@ -112,7 +113,7 @@ a {
 /* -------------- */
 
 .header {
-    border-bottom: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-text-light);
     display: flex;
     justify-content: space-between;
 }
@@ -128,17 +129,20 @@ a {
 
 .cookie-preview {
     border-radius: 50%;
+    background-repeat: repeat;
+    background-position: center center;
     height: 300px;
     width: 300px;
 }
 
 .cookie-preview--brown {
-    background-color: var(--color-brown);
+    background: var(--color-brown);
     box-shadow: 7px 5px 0 var(--color-brown-dark);
 }
 
 .cookie-preview--brown-light {
-    background-color: var(--color-brown-light);
+    background: url('../images/coconut-shripms.png'), url('../images/sprinkles.png'), url('../images/strawberries.png'),
+        url('../images/candies.png'), url('../images/honey-splash.png'), var(--color-brown-light);
     box-shadow: -7px 5px 0 var(--color-brown);
 }
 
