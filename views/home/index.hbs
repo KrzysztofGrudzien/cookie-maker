@@ -5,7 +5,7 @@
         <div class="buttons">
             <ul class="buttons__list buttons__list--col">
                 {{#each types}}
-                    <li class="buttons__list-item"><div class="btn-box btn-box--brown-{{this.[0]}}"></div><a href="/configurator/select-type/{{this.[0]}}" class="btn btn-link">Select {{this.[0]}} for {{price-fix this.[1]}} PLN</a></li>
+                    <li class="buttons__list-item"><div class="btn-box btn-box--brown-{{this.[0]}}"></div><a href="/cookie-config/select-type/{{this.[0]}}" class="btn btn-link">Select {{this.[0]}} for {{price-fix this.[1]}} PLN</a></li>
                 {{/each}}
             </ul>
         </div>  
@@ -19,7 +19,7 @@
         <div class="buttons">
             <ul class="buttons__list">
                 {{#each addons}}
-                    <li class="buttons__list-item buttons__list-item--col"><div class="btn-box btn-box--{{this.[0]}}"></div><a href="/configurator/add-addon/{{this.[0]}}" class="btn btn-link">Add {{this.[0]}} for {{price-fix this.[1]}} PLN</a></li>
+                    <li class="buttons__list-item buttons__list-item--col"><div class="btn-box btn-box--{{this.[0]}}"></div><a href="/cookie-config/add-addon/{{this.[0]}}" class="btn btn-link">Add {{this.[0]}} for {{price-fix this.[1]}} PLN</a></li>
                 {{/each}}
             </ul>
             {{> addons}}

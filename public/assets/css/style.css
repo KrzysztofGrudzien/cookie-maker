@@ -242,6 +242,17 @@ a {
     font-weight: 600;
 }
 
+.btn-back {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    display: block;
+    margin-top: 8rem;
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    width: 20%;
+}
+
 .addons-list {
     display: flex;
     flex-direction: column;
