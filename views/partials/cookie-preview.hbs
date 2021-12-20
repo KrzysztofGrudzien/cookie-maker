@@ -1,3 +1,5 @@
 {{#with cookie}}
-    <div class="cookie-preview cookie-preview--{{type}}"></div>
+    <div class="cookie-preview cookie-preview--{{type}}" >
+        <div class="cookie-preview-addons" style="background-image: {{#each addons}} url('/assets/images/{{this}}.png'), {{/each}} url('')"></div>
+    </div>
 {{/with}}
