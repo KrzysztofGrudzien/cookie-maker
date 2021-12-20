@@ -152,12 +152,12 @@ a {
     box-shadow: 7px 5px 0 var(--color-brown-dark);
 }
 
-.cookie-preview--brown-light {
+.cookie-preview--light {
     background-color: var(--color-brown-light);
     box-shadow: -7px 5px 0 var(--color-brown);
 }
 
-.cookie-preview--brown-dark {
+.cookie-preview--dark {
     background-color: var(--color-brown-dark);
     box-shadow: 7px -5px 0 var(--color-brown);
 }
