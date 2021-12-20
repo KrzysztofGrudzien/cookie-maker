@@ -1,7 +1,7 @@
 <h2>Selected parts of cookie</h2>
-<ul>
-    <li>Type: {{cookie.type}}  - {{find-price types cookie.type}} PLN</li>
+<ul class="addons-list">
+    <li class="addons-item">Type: {{cookie.type}}  - {{find-price types cookie.type}} PLN</li>
     {{#each cookie.addons}}
-        <li>Addon: {{this}} - {{find-price @root.addons this}} PLN</li>
+        <li class="addons-item">Addon: {{this}} - {{find-price @root.addons this}} PLN</li>
     {{/each}}
 </ul>

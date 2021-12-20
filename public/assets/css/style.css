@@ -241,3 +241,14 @@ a {
 .btn-link {
     font-weight: 600;
 }
+
+.addons-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.addons-item {
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-top: 5px;
+}
