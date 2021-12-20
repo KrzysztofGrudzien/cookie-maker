@@ -132,7 +132,19 @@ a {
     background-repeat: repeat;
     background-position: center center;
     height: 300px;
+    position: relative;
     width: 300px;
+}
+
+.cookie-preview-addons {
+    border-radius: 50%;
+    background-repeat: repeat;
+    background-position: center center;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .cookie-preview--brown {
@@ -141,8 +153,7 @@ a {
 }
 
 .cookie-preview--brown-light {
-    background: url('../images/coconut-shripms.png'), url('../images/sprinkles.png'), url('../images/strawberries.png'),
-        url('../images/candies.png'), url('../images/honey-splash.png'), var(--color-brown-light);
+    background-color: var(--color-brown-light);
     box-shadow: -7px 5px 0 var(--color-brown);
 }
 
@@ -162,7 +173,6 @@ a {
 
 .buttons__list-item {
     align-items: center;
-    cursor: pointer;
     display: flex;
     font-size: 1.4rem;
     font-weight: 600;
@@ -188,7 +198,7 @@ a {
     width: 4rem;
 }
 
-.btn-box--brown {
+.btn-box--brown-brown {
     background-color: var(--color-brown);
 }
 
@@ -202,7 +212,7 @@ a {
 
 .btn-box--honey,
 .btn-box--coconut,
-.btn-box--strawberry,
+.btn-box--strawberries,
 .btn-box--candy,
 .btn-box--sprinkles {
     margin-bottom: 2rem;
@@ -216,7 +226,7 @@ a {
     background-image: url('../images/coconut.svg');
 }
 
-.btn-box--strawberry {
+.btn-box--strawberries {
     background-image: url('../images/strawberry.svg');
 }
 
