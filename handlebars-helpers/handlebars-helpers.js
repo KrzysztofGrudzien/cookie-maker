@@ -8,6 +8,8 @@ const handlebarsHelpers = {
         const [, price] = foundPrice;
         return price;
     },
+
+    'price-fix': price => price.toFixed(2),
 };
 
 module.exports = {
