@@ -82,6 +82,10 @@ a:hover {
     padding: 2rem;
 }
 
+.container:first-of-type {
+    padding: 2rem 0;
+}
+
 .container-col {
     width: 50%;
 }
