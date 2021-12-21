@@ -4,7 +4,7 @@
     --color-brown-dark: #5a2c22;
     --color-bg: #f4fcfc;
     --color-text: #455a5b;
-    --color-text-light: #99cdcf;
+    --color-text-light: #c6d7d8;
 }
 
 html {
@@ -69,6 +69,11 @@ img {
 a {
     color: var(--color-text);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-brown-dark);
 }
 
 .container {
@@ -113,7 +118,7 @@ a {
 /* -------------- */
 
 .header {
-    border-bottom: 1px solid var(--color-text-light);
+    border-bottom: 2px solid var(--color-text-light);
     display: flex;
     justify-content: space-between;
 }
@@ -267,4 +272,13 @@ a {
 .summary {
     font-size: 1.4rem;
     margin-top: 2rem;
+}
+
+/* -------------- */
+/*     FOOTER     */
+/* -------------- */
+
+.footer {
+    border-top: 2px solid var(--color-text-light);
+    justify-content: flex-end;
 }
