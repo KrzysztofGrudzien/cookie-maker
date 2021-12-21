@@ -8,6 +8,23 @@ cookieConfigRouter.get('/select-type/:type', (req, res) => {
     });
 });
 
+cookieConfigRouter.get('/add-addon/:addon', (req, res) => {
+    const { cookieAddons } = req.cookies;
+    const { addon } = req.params;
+    const addons = cookieAddons ? JSON.parse(cookieAddons) : [];
+
+    if (!addons.includes(addon)) {
+        addons.push(addon);
+        res.cookie('cookieAddons', JSON.stringify(addons)).render('cookie-config/added-addon', {
+            addon,
+        });
+    } else {
+        res.render('cookie-config/error', {
+            addon,
+        });
+    }
+});
+
 module.exports = {
     cookieConfigRouter,
 };
