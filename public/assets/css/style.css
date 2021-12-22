@@ -262,15 +262,31 @@ a:hover {
     width: 20%;
 }
 
+.btn-addon {
+    background: var(--color-text) url('../images/trash.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    border: 5px solid var(--color-text);
+    color: var(--color-text-light);
+    display: inline-block;
+    height: 2.3rem;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    width: 1.5rem;
+}
+
 .addons-list {
     display: flex;
     flex-direction: column;
 }
 
 .addons-item {
+    align-items: center;
+    display: flex;
     font-weight: 600;
     font-size: 1.4rem;
-    padding-top: 5px;
+    padding: 0.5rem;
 }
 
 .summary {

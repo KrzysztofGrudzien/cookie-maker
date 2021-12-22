@@ -2,6 +2,6 @@
 <ul class="addons-list">
     <li class="addons-item">Type: {{cookie.type}}  - {{ price-fix (find-price types cookie.type)}} PLN</li>
     {{#each cookie.addons}}
-        <li class="addons-item">Addon: {{this}} - {{ price-fix (find-price @root.addons this)}} PLN</li>
+        <li class="addons-item">Addon: {{this}} - {{ price-fix (find-price @root.addons this)}} PLN <a href="/cookie-config/delete-addon/{{this}}" class="btn-addon"/></a></li>
     {{/each}}
 </ul>
