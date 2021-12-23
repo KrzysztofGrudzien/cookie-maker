@@ -5,6 +5,13 @@ const cookieConfigRouter = express.Router();
 cookieConfigRouter
     .get('/select-type/:type', (req, res) => {
         const { type } = req.params;
+
+        if (!COOKIES_TYPES[type]) {
+            return res.render('cookie-config/error', {
+                error: `Ooops! There is no such type cookie as ${type}!`,
+            });
+        }
+
         res.cookie('cookieType', type).render('cookie-config/selected-type', {
             type,
         });
