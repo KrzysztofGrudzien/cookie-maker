@@ -19,7 +19,7 @@ cookieConfigRouter
                 addon,
             });
         } else {
-            res.render('cookie-config/error', {
+            return res.render('cookie-config/error', {
                 addon,
             });
         }
