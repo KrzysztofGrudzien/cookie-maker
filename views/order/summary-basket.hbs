@@ -1,0 +1,10 @@
+
+<div class="container">
+    <h2>Order summary</h2>
+    {{> cookie-preview}}
+    <br />
+    <br />
+    {{> addons withoutDelete="false"}}
+    <a href="/order/thanks" class="btn btn-order">Finish my order!</a>
+    {{> back-home}}
+</div>

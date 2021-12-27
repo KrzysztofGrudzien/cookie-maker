@@ -115,13 +115,18 @@ a:hover {
     text-align: center;
 }
 
-.title-error {
+.title-error,
+.title-success {
     background-color: var(--color-error);
     color: var(--color-bg);
     margin-bottom: 2rem;
     padding: 2rem;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title-success {
+    background-color: var(--color-data-color);
 }
 
 .title-correct {
