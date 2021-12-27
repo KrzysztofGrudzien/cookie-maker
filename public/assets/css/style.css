@@ -273,6 +273,21 @@ a:hover {
     font-weight: 600;
 }
 
+.btn-order {
+    background: var(--color-brown-light) url('../images/basket.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    border: solid 5px var(--color-brown-light);
+    border-left: solid 1rem var(--color-brown-light);
+    border-radius: 3px;
+    box-shadow: 2px 2px 0 rgba(71, 50, 50, 0.08);
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    padding: 1rem 6rem;
+    text-align: center;
+}
+
 .btn-back {
     background-color: var(--color-text);
     color: var(--color-bg);
@@ -288,7 +303,7 @@ a:hover {
     background: var(--color-text) url('../images/trash.svg');
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 5px solid var(--color-text);
     color: var(--color-text-light);
     display: inline-block;
