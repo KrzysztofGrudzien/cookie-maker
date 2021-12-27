@@ -42,7 +42,16 @@ cookieConfigRouter
     .get('/delete-addon/:addon', (req, res) => {
         const { cookieAddons } = req.cookies;
         const { addon } = req.params;
-        const addons = (cookieAddons ? JSON.parse(cookieAddons) : []).filter(addonName => addonName !== addon);
+
+        const oldAddons = (cookieAddons ? JSON.parse(cookieAddons) : []).filter(addonName => addonName !== addon);
+
+        if (!oldAddons.includes(addon)) {
+            return res.render('cookie-config/error', {
+                error: `Ooops! You can't delete addon - ${addon} - because it doesn't exist!`,
+            });
+        }
+
+        const addons = oldAddons.filter(addonName => addonName !== addon);
 
         res.cookie('cookieAddons', JSON.stringify(addons)).render('cookie-config/deleted-addon', {
             addon,
